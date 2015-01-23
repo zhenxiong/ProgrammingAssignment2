@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Overall Function: There are two functions within this script. 
+## makeCacheMatrix() turns a typical matrix into a special matrix that allows caching.
+## cacheSolve() returns the inverse of the matrix input.
 
-## Write a short comment describing this function
+## makeCacheMatrix() accepts a non singular matrix as input and 
+## turns the input into a "special matrix" that allows caching, 
+## and retriving of the cached info i.e. inverse of input.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -17,7 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve() accepts a "special matrix" as input and
+## retrieves and returns the inverse of the special matrix from the cache if it exists.
+## Otherwise, the inverse of the "special matrix" will be calculated and returned.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
